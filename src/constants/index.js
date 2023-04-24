@@ -194,6 +194,14 @@ const testimonials = [
     company: '456 Enterprises',
     image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
+  {
+    testimonial:
+      "After Rick optimassized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: 'Lisaasa Wang',
+    designation: 'CasasTO',
+    company: '456 Enasaterprises',
+    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  },
 ]
 
 const projects = [
