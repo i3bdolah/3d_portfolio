@@ -30,6 +30,11 @@ const Contact = () => {
     // template_h305hho
     // service_ffh18kb
     // Q9EgFhAQj1oJ3wF5C
+
+    if (form.name.trim().length === 0) {
+      return
+    }
+
     emailjs
       .send(
         'service_ffh18kb',
@@ -82,6 +87,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              required
               placeholder="What's your name?"
               className=" bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -94,6 +100,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              required
               placeholder="What's your email?"
               className=" bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -106,6 +113,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
+              required
               placeholder="What do you want to say?"
               className=" bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
